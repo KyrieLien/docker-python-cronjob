@@ -5,8 +5,10 @@ foxit interview test
 
 1. Write a SQL query command for a report that provides the following information for each document in the `Document` table, regardless if there is an content for each of those documents.
 
-SELECT D.Author, D.Title, C.Metadata AS Subtype, C.Content FROM Document D INNER JOIN
-Content C ON D.DocumentId = C.DocumentId
+```
+SELECT D.Author, D.Title, C.Metadata AS Subtype, C.Content FROM Document D 
+INNER JOIN Content C ON D.DocumentId = C.DocumentId
+```
 
 ```
 Author, Title, Subtype, Content
